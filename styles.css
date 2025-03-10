@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .social-card {
+    background-color: #222;
+    border-color: #444;
+}
+
+.dark-mode header {
+    background-color: #1c1c1c;
+}
+
+/* Encabezado */
+header {
+    background-color: #282828;
+    color: white;
+    padding: 20px;
+}
+
+#theme-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#theme-toggle:hover {
+    background-color: #666;
+}
+
+/* Contenedores de secciones */
+.social-section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .social-section {
+    background-color: #1c1c1c;
+}
+
+/* Tarjetas de redes sociales */
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.social-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+}
+
+.dark-mode .social-card {
+    background-color: #222;
+    border-color: #444;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de videos */
+.popular-videos {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .popular-videos {
+    background-color: #1c1c1c;
+}
+
+.popular-videos iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #282828;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .social-card {
+        width: 90%;
+    }
+}

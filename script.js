@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const channels = [
         { name: "Videojuegos (Apricot634)", id: "UCXR8YBTR1ruWj4RYXr_gUpw" },
         { name: "Comedia (HJosexxx)", id: "UCXR8YBTR1ruWj4RYXr_gUpw" },
-        { name: "Música (J King)", id: "UCXR8YBTR1ruWj4RYXr_gUpw" },
-        { name: "ARK (HJ-ark)", id: "UCXR8YBTR1ruWj4RYXr_gUpw" }
-    ];
+     ];
 
     channels.forEach(channel => {
         fetch(`https://www.googleapis.com/youtube/v3/search?key=TU_API_KEY&type=video&part=snippet&channelId=${channel.id}&order=date&maxResults=1`)
